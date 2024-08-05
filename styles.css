@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #002147;
+    background-color: rgba(0, 33, 71, 0.9);
     color: white;
     padding: 1em 0;
 }
@@ -55,40 +55,44 @@ nav ul li a {
     font-size: 1.2em;
 }
 
-.features, .rewards, .community, .contact {
+.borrow-lend, .contact, .login, .register {
     padding: 4em 0;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 2em 0;
 }
 
-.features .container, .rewards .container, .community .container, .contact .container {
+.borrow-lend .container, .contact .container, .login .container, .register .container {
     max-width: 1200px;
     margin: auto;
 }
 
-.features .feature-item {
+.borrow-lend .feature-item {
     display: inline-block;
     width: 30%;
     margin: 1.5%;
     text-align: center;
 }
 
-.features .feature-item img {
+.borrow-lend .feature-item img {
     max-width: 100px;
 }
 
-.contact form {
+.contact form, .login form, .register form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.contact form input, .contact form textarea {
+.contact form input, .contact form textarea, .login form input, .register form input {
     width: 80%;
     padding: 0.5em;
     margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.contact form button {
+.contact form button, .login form button, .register form button {
     background-color: #002147;
     color: white;
     padding: 0.5em 2em;
@@ -97,8 +101,20 @@ nav ul li a {
 }
 
 footer {
-    background-color: #002147;
+    background-color: rgba(0, 33, 71, 0.9);
     color: white;
     text-align: center;
     padding: 1em 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .borrow-lend .feature-item {
+        width: 80%;
+        margin: 1em 0;
+    }
 }
