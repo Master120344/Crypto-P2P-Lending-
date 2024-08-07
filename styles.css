@@ -1,15 +1,16 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #000;
+    color: #fff;
 }
 
 header {
-    background-color: rgba(0, 33, 71, 0.9);
-    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffd700;
     padding: 1em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 header .container {
@@ -20,6 +21,7 @@ header .container {
 
 header h1 {
     margin: 0;
+    font-size: 1.5em;
 }
 
 nav ul {
@@ -34,47 +36,47 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #ffd700;
     text-decoration: none;
     font-weight: bold;
 }
 
 .hero {
-    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    background: url('images/space-bg.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 4em 0;
 }
 
 .hero .cta-button {
-    background-color: #ff6f61;
-    color: white;
+    background-color: #ffd700;
+    color: #000;
     padding: 0.5em 1em;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1.2em;
 }
 
-.borrow-lend, .contact, .login, .register {
+.features, .borrow-lend, .contact, .login, .register {
     padding: 4em 0;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     margin: 2em 0;
 }
 
-.borrow-lend .container, .contact .container, .login .container, .register .container {
+.features .container, .borrow-lend .container, .contact .container, .login .container, .register .container {
     max-width: 1200px;
     margin: auto;
 }
 
-.borrow-lend .feature-item {
+.features .feature-item, .borrow-lend .feature-item {
     display: inline-block;
     width: 30%;
     margin: 1.5%;
     text-align: center;
 }
 
-.borrow-lend .feature-item img {
+.features .feature-item img, .borrow-lend .feature-item img {
     max-width: 100px;
 }
 
@@ -93,16 +95,16 @@ nav ul li a {
 }
 
 .contact form button, .login form button, .register form button {
-    background-color: #002147;
-    color: white;
+    background-color: #ffd700;
+    color: #000;
     padding: 0.5em 2em;
     border: none;
     border-radius: 5px;
 }
 
 footer {
-    background-color: rgba(0, 33, 71, 0.9);
-    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffd700;
     text-align: center;
     padding: 1em 0;
 }
@@ -113,7 +115,7 @@ footer {
         align-items: center;
     }
 
-    .borrow-lend .feature-item {
+    .features .feature-item, .borrow-lend .feature-item {
         width: 80%;
         margin: 1em 0;
     }
