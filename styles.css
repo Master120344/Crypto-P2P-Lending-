@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #000;
     color: #fff;
+    overflow-x: hidden;
 }
 
 header {
@@ -55,6 +56,12 @@ nav ul li a {
     text-decoration: none;
     border-radius: 5px;
     font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero .cta-button:hover {
+    background-color: #ffcc00;
+    transform: scale(1.1);
 }
 
 .features, .borrow-lend, .contact, .login, .register {
@@ -74,6 +81,11 @@ nav ul li a {
     width: 30%;
     margin: 1.5%;
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.features .feature-item:hover, .borrow-lend .feature-item:hover {
+    transform: translateY(-10px);
 }
 
 .features .feature-item img, .borrow-lend .feature-item img {
@@ -100,6 +112,12 @@ nav ul li a {
     padding: 0.5em 2em;
     border: none;
     border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact form button:hover, .login form button:hover, .register form button:hover {
+    background-color: #ffcc00;
+    transform: scale(1.1);
 }
 
 footer {
