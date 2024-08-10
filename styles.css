@@ -2,10 +2,21 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: url('images/stars-bg.jpg') no-repeat center center fixed;
+    background: url('Folder/crypto wallpaper.png') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
     overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Adds a cool transparent dark overlay */
+    z-index: -1;
 }
 
 header {
@@ -56,10 +67,11 @@ nav ul li a:hover {
 }
 
 .hero {
-    background: url('images/space-bg.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 4em 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adds transparency to the hero section */
+    margin-bottom: 2em;
 }
 
 .hero .cta-button {
@@ -82,6 +94,7 @@ nav ul li a:hover {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.8);
     margin: 2em 0;
+    border-radius: 10px; /* Adding rounded corners */
 }
 
 .features .container, .borrow-lend .container, .contact .container, .login .container, .register .container {
@@ -95,6 +108,9 @@ nav ul li a:hover {
     margin: 1.5%;
     text-align: center;
     transition: transform 0.3s ease;
+    border-radius: 10px; /* Adding rounded corners */
+    background-color: rgba(255, 255, 255, 0.1); /* Adding a slight transparency */
+    padding: 1em;
 }
 
 .features .feature-item:hover, .borrow-lend .feature-item:hover {
