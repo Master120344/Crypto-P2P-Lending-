@@ -40,4 +40,16 @@ document.addEventListener("DOMContentLoaded", () => {
             button.style.transform = 'scale(1)';
         });
     });
+
+    // Shooting stars effect
+    const createShootingStar = () => {
+        const star = document.createElement("div");
+        star.className = "shooting-star";
+        document.body.appendChild(star);
+        setTimeout(() => {
+            star.remove();
+        }, 2000);
+    };
+
+    setInterval(createShootingStar, 1000);
 });
